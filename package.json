@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "description": "Collection of exercises to get you start and familiar with testing using Jest",
   "bugs": {
-    "url": "https://github.com/kwelch/jest-exercises/issues"
+    "url": "https://github.com/NashReact/jest-exercises/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kwelch/jest-exercises.git"
+    "url": "https://github.com/NashReact/jest-exercises.git"
   },
   "author": {
     "name": "Kyle Welch",
