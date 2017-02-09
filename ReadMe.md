@@ -1,6 +1,6 @@
-# Jest Excerises
+# Jest Exercises
 
-This repo is a Collection of exercises to get you start and familiar with testing using [Jest](facebook/jest).
+This repo is a Collection of exercises to get you started and familiar with testing using [Jest](facebook/jest).
 
 ## Getting Started
 - Clone this repo
