@@ -10,6 +10,6 @@ This repo is a Collection of exercises to get you started and familiar with test
   
 
  For repo access, just ask!
- - [twitter](https://twitter.com/kylewelch)
+ - [Twitter](https://twitter.com/kylewelch)
  - NashDevs Slack - @kylewelch
  - [Create an Issue](../../issues/new)
