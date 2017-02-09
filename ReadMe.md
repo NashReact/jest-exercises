@@ -12,4 +12,4 @@ This repo is a Collection of exercises to get you start and familiar with testin
  For repo access, just ask!
  - [twitter](https://twitter.com/kylewelch)
  - NashDevs Slack - @kylewelch
- - [Create an Issue](/issues/new)
+ - [Create an Issue](../../issues/new)
