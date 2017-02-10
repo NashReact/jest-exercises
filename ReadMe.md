@@ -8,8 +8,19 @@ This repo is a Collection of exercises to get you started and familiar with test
 - Run `yarn start` or `npm start`
   - _This will copy all of the exercises into a new folder using your GitHub username._
   
+## Exercises
+
+- * 0* - Level *
+Setup Level - Tests and functions are written
+  - [Setup Jest](/exercises/00 - Setup Jest)
+- * 1* - Level *
+TDD Level - Tests are written, fill in functions to make them pass
+  - [Lookup Function](/exercises/10 - Lookup)
+  - [Pure Function](/exercises/11 - Pure Function)
+
+
 
  For repo access, just ask!
  - [Twitter](https://twitter.com/kylewelch)
- - NashDevs Slack - @kylewelch
+ - NashDevs Slack - @kylewelch or @kevinold
  - [Create an Issue](../../issues/new)
