@@ -10,11 +10,9 @@ This repo is a Collection of exercises to get you started and familiar with test
   
 ## Exercises
 
-- * 0* - Level *
-Setup Level - Tests and functions are written
+- **Level 0#** - Setup Level - Tests and functions are written
   - [Setup Jest](/exercises/00 - Setup Jest)
-- * 1* - Level *
-TDD Level - Tests are written, fill in functions to make them pass
+- **Level 1#** - TDD Level - Tests are written, fill in functions to make them pass
   - [Lookup Function](/exercises/10 - Lookup)
   - [Pure Function](/exercises/11 - Pure Function)
 
