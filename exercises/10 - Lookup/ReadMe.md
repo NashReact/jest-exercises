@@ -10,4 +10,4 @@ You task is to write the lookup function to pass all four tests.
   - Run `yarn` or `npm install`
 - Run `yarn test` or `npm test`
   - This will start jest in watch mode, it will re-run tests on every save
-- Update `lookup` in `index.spec.js` until tests pass
+- Update `lookup` in [`index.spec.js`](/index.spec.js) until tests pass

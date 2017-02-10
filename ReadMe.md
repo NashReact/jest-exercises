@@ -15,10 +15,10 @@ This repo is a Collection of exercises to get you started and familiar with test
 - **Level 1#** - TDD Level - Tests are written, fill in functions to make them pass
   - [Lookup Function](/exercises/10 - Lookup)
   - [Pure Function](/exercises/11 - Pure Function)
+  - Component Snapshot
+  - Mocking
 
-
-
- For repo access, just ask!
+### For access, just ask!
  - [Twitter](https://twitter.com/kylewelch)
  - NashDevs Slack - @kylewelch or @kevinold
  - [Create an Issue](../../issues/new)
