@@ -15,7 +15,8 @@ This repo is a Collection of exercises to get you started and familiar with test
 - **Level 1#** - TDD Level - Tests are written, fill in functions to make them pass
   - [Lookup Function](/exercises/10 - Lookup)
   - [Pure Function](/exercises/11 - Pure Function)
-  - Component Snapshot
+  - [Object Snapshot](/exercises/12 - Object Snapshot)
+  - [Component Snapshot](/exercises/13 - Component Snapshot)
   - Mocking
 
 ### For access, just ask!

@@ -1,0 +1,41 @@
+exports[`usersReducer SAVE_USER action should append to state array 1`] = `
+Object {
+  "users": Array [
+    Object {
+      "handle": "kwelch",
+      "name": "Kyle Welch",
+    },
+  ],
+}
+`;
+
+exports[`usersReducer SAVE_USER action should append to state array 2`] = `
+Object {
+  "users": Array [
+    Object {
+      "handle": "kwelch",
+      "name": "Kyle Welch",
+    },
+    Object {
+      "handle": "jsmith",
+      "name": "Jane Smith",
+    },
+  ],
+}
+`;
+
+exports[`usersReducer SAVE_USER action should update when handle matches 1`] = `
+Object {
+  "users": Array [
+    Object {
+      "handle": "kwelch",
+      "name": "Kyle Welch",
+      "role": "Test Driven Developer",
+    },
+    Object {
+      "handle": "jsmith",
+      "name": "Jane Smith",
+    },
+  ],
+}
+`;
