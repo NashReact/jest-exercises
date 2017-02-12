@@ -16,8 +16,8 @@ This repo is a Collection of exercises to get you started and familiar with test
   - [Lookup Function](/exercises/10 - Lookup)
   - [Pure Function](/exercises/11 - Pure Function)
   - [Object Snapshot](/exercises/12 - Object Snapshot)
-  - [Component Snapshot](/exercises/13 - Component Snapshot)
-  - Mocking
+  - [Component Testing](/exercises/13 - Component Testing)
+  - Promise Testing
 
 ### For access, just ask!
  - [Twitter](https://twitter.com/kylewelch)

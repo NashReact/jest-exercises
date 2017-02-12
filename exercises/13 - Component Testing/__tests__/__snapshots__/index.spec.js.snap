@@ -1,0 +1,49 @@
+exports[`<List /> should render consistently 1`] = `
+<ul>
+  <li
+    className=""
+    onClick={[Function]}>
+    Item 1
+  </li>
+  <li
+    className="selected"
+    onClick={[Function]}>
+    Item 2
+  </li>
+  <li
+    className=""
+    onClick={[Function]}>
+    Item 3
+  </li>
+  <li
+    className=""
+    onClick={[Function]}>
+    Item 4
+  </li>
+</ul>
+`;
+
+exports[`<List /> should render consistently 2`] = `
+<ul>
+  <li
+    className=""
+    onClick={[Function]}>
+    Item 1
+  </li>
+  <li
+    className=""
+    onClick={[Function]}>
+    Item 3
+  </li>
+  <li
+    className="selected"
+    onClick={[Function]}>
+    Item 4
+  </li>
+  <li
+    className=""
+    onClick={[Function]}>
+    Item 5
+  </li>
+</ul>
+`;

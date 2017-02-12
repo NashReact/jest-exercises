@@ -1,6 +1,6 @@
 # Object Snapshot
 
-This exercise is set to setup your understand of snapshots by implement a `redux` reducer.
+This exercise is set to setup your understanding of snapshots by implementing a `redux` reducer.
 
 Snapshots are assertions values that are saved and updated using jest. 
 Snapshots files are saved into a `__snapshots__` directory relative to the tests. 
