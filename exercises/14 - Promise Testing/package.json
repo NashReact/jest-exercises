@@ -1,0 +1,26 @@
+{
+  "name": "promise-tests",
+  "private": true,
+  "scripts": {
+    "test": "jest --watch --notify"
+  },
+  "dependencies": {
+    "babel-jest": "^18.0.0",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^18.1.0",
+    "jest-fetch-mock": "^1.0.7",
+    "node-fetch": "^1.6.3"
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-2"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}

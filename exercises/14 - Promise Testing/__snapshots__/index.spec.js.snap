@@ -1,0 +1,59 @@
+exports[`callApi should handle null/empty array/undefined within results 1`] = `
+Object {
+  "addresses": Array [],
+  "firstName": "Kyle",
+  "id": 1,
+  "lastName": "Welch",
+  "organization": null,
+}
+`;
+
+exports[`callApi should normalize json as camelCase values deeply 1`] = `
+Object {
+  "addresses": Array [
+    Object {
+      "city": "Nashville",
+    },
+    Object {
+      "state": "TN",
+    },
+  ],
+  "firstName": "Kyle",
+  "id": 1,
+}
+`;
+
+exports[`callApi should normalize json as camelCase values deeply 2`] = `
+Array [
+  Object {
+    "1": Object {
+      "name": "Bill",
+    },
+    "2": Object {
+      "name": "Jane",
+    },
+    "addresses": Array [
+      Object {
+        "city": "Nashville",
+      },
+      Object {
+        "state": "TN",
+      },
+    ],
+    "firstName": "Kyle",
+    "id": 1,
+  },
+  "Joe",
+  Object {
+    "foo": Object {
+      "bAR": Object {
+        "fizz": Array [
+          Object {
+            "buzz": 1,
+          },
+        ],
+      },
+    },
+  },
+]
+`;
