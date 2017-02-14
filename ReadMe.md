@@ -18,7 +18,7 @@ This repo is a Collection of exercises to get you started and familiar with test
   - [Object Snapshot](/exercises/12 - Object Snapshot)
   - [Component Testing](/exercises/13 - Component Testing)
   - [Promise Testing](/exercises/14 - Promise Testing)
-  - Expect Extensions 
+  - [Expect Extensions](/exercises/15 - Expect Extensions)
 
 ### For access, just ask!
  - [Twitter](https://twitter.com/kylewelch)
