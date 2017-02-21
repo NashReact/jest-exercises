@@ -22,16 +22,16 @@ export const defaultFetchHeaders = {
   },
 };
 
-const camelCase = input => {
+export const camelCase = input => {
   // TODO: implement
 };
 
 const normalizeCasing = value => {
-  // todo: implements
+  // TODO: implement
 };
 
 const callApi = (url = '', options = {}) => {
-  //todo: implement
+  // TODO: implement
 };
 
 export default callApi;

@@ -1,5 +1,5 @@
 import 'isomorphic-fetch';
-import callApi, { defaultFetchHeaders } from './index';
+import callApi, { defaultFetchHeaders, camelCase } from './index';
 var mockFetch;
 
 jest.mock('node-fetch', () => {
@@ -123,4 +123,37 @@ describe('callApi', () => {
     mockFetch.mockResponseOnce(JSON.stringify(sampleObject));
     return callApi().then(({ json }) => expect(json).toMatchSnapshot());
   });
+});
+
+describe('#camelCase', () => {
+  const obj = { SuperLongCSharpVariableNameThatIsInMyJSON: 1 };
+  const formattedObj = { superLongCSharpVariableNameThatIsInMyJSON: 1 };
+
+  it('returns the input if it is an array with no objects', () => {
+    expect(camelCase([1, 2, 3])).toEqual([1,2,3]);
+  });
+
+  it('returns the input if it is a nested array with no objects', () => {
+    expect(camelCase([1, [2], 3])).toEqual([1, [2] ,3]);
+  });
+  
+  it('camel-cases object keys when a single object is nested inside an array', () => {
+    expect(camelCase([obj])).toEqual([formattedObj]);
+  });
+  
+  it('camel-cases object keys when an object and a primitive are nested in an array', () => {
+    expect(camelCase([obj, 1])).toEqual([formattedObj, 1]);
+  });
+  
+  it('camel-cases object keys if the object contains an array', () => {
+    const nestedArray = Object.assign({}, obj, { Arr: [1, 2, 3] });
+    const expected = Object.assign({}, formattedObj, { arr: [1, 2, 3] });
+    expect(camelCase(nestedArray)).toEqual(expected);
+  });
+  
+  it('camel-cases object keys if the object contains an array containing an object', () => {
+    const nestedArray = Object.assign({}, obj, { Arr: [1, { B: 2 }, 3] });
+    const expected = Object.assign({}, formattedObj, { arr: [1, { b: 2 }, 3] });
+    expect(camelCase(nestedArray)).toEqual(expected);
+  }); 
 });
