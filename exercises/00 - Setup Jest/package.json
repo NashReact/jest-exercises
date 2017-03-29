@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.1",
   "scripts": {
-    "test": "echo \"This is part of the jest setup\" && exit 1"
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest-cli": "^19.0.2"
   }
 }
