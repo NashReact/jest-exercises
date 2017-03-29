@@ -1,11 +1,13 @@
 // setPrice(item: Object, price: Number) => item: Object
 const setPrice = (item, price) => {
-  // TODO: implement
+  return Object.assign({}, item, {
+    price,
+  });
 };
 
 // addToCart(cart: Array, item: Object) => cart: Array
 const addToCart = (cart, item) => {
-  // TODO: implement
+  return cart.concat(item);
 };
 
 describe('setPrice()', () => {
