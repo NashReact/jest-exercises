@@ -1,5 +1,19 @@
 import React from 'react';
+import classnames from 'classnames';
 
-export default () => {
-  // Implement this component to pass the tests in ./__tests/index.spec.js
+export default ({data, onClick}) => {
+  const handleClick = (key) => () => {
+    return onClick(key);
+  }
+  return (<ul>
+    {data.map(i => {
+      return (<li
+        key={i.key}
+        className={classnames({selected: i.selected})}
+        onClick={handleClick(i.key)}
+      >
+        {i.name}
+      </li>);
+    })}
+    </ul>);
 };
