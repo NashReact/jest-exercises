@@ -28,20 +28,20 @@ expect.extend({
 });
 
 test('should return function', () => {
-  const value = undefined;
+  const value = ()=>({});
   expect(value).toBeFunction();
 });
 
 test('should not be function', () => {
-  const value = undefined;
+  const value = null;
   expect(value).not.toBeFunction();
 });
 
 test('should return property', () => {
-  const value = undefined;
+  const value = {name: 'Kyle Welch', age: 27};
   expect(value).toHaveProperty('name');
 });
 test('should return property', () => {
-  const value = undefined;
+  const value = {name: 'Kyle Welch'};
   expect(value).not.toHaveProperty('age');
 });
