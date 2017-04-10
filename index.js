@@ -32,7 +32,7 @@ const run = async() => {
     properties: {
       username: {
         default: username,
-        pattern: /^[a-z0-9_-]{3,15}$/,
+        pattern: /^[A-Za-z0-9_-]{3,15}$/,
         message: 'Name must be only letters, numbers, underscores, or dashes',
       },
     },
