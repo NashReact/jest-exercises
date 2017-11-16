@@ -1,7 +1,21 @@
 import { createStore, combineReducers } from 'redux';
 
-const usersReducer = (state, action) => {
-  // Implement this reducer to pass the tests below
+const usersReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'SAVE_USER':
+      const { user } = action;
+      if (state.some(u => u.handle === user.handle)) {
+        return state.map(u => {
+          if (u.handle === user.handle) {
+            return Object.assign({}, u, user);
+          }
+          return u;
+        });
+      }
+      return [...state, user];
+    default:
+      return state;
+  }
 };
 
 const configureStore = (initialState = {}) => {

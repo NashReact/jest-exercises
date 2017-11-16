@@ -19,8 +19,5 @@
       "latest",
       "stage-2"
     ]
-  },
-  "jest": {
-    "testEnvironment": "node"
   }
 }

@@ -23,15 +23,41 @@ export const defaultFetchHeaders = {
 };
 
 export const camelCase = input => {
-  // TODO: implement
+  return (typeof input === 'string') ? input.charAt(0).toLowerCase() + input.slice(1) : input;
 };
 
-const normalizeCasing = value => {
-  // TODO: implement
+export const normalizeCasing = value => {
+  if (value === null) {
+    return null;
+  }
+  if (Array.isArray(value)) {
+    return value.map(normalizeCasing);
+  }
+  if (typeof value === 'object') {
+    return Object.keys(value).reduce((acc, curr) => {
+      return {
+        ...acc,
+        [camelCase(curr)]: normalizeCasing(value[curr]),
+      };
+    }, {});
+  }
+  return value;
 };
 
 const callApi = (url = '', options = {}) => {
-  // TODO: implement
+  const apiUrl = (/https?:\/\//.test(url)) ? url : `${LOCATION_ORIGIN}${url}`;
+  const fetchOptions = Object.assign({}, defaultFetchHeaders, options);
+  return fetch(apiUrl, fetchOptions)
+    .then((resp) => {
+      if (resp.status !== 204) {
+        return resp.json()
+          .then((json) => {
+            const results = { json: normalizeCasing(json), resp };
+            return (resp.status >= 500 && resp.status < 600) ? Promise.reject(results) : results;
+          });
+      }
+      return { json: null, resp };
+    });
 };
 
 export default callApi;
