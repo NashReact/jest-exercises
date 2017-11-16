@@ -14,6 +14,7 @@ jest.mock('./eventApi',  () => {
 
 describe('getEvent', () => {
 
+  // removed since I was unable to get it to unmock
   xit('should call real api method', () => {
     jest.dontMock('./eventApi');
     const event = getEvent(123);
